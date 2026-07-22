@@ -59,3 +59,40 @@ SELECT
 FROM
   `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
 LIMIT 10;
+
+
+
+-- ==========================================
+-- Parâmetros disponíveis nos eventos
+-- ==========================================
+
+SELECT
+  ep.key AS parametro,
+  COUNT(*) AS ocorrencias
+FROM
+  `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`,
+  UNNEST(event_params) AS ep
+GROUP BY
+  parametro
+ORDER BY
+  ocorrencias DESC;
+
+
+
+-- ==========================================
+-- Estrutura dos produtos (items)
+-- ==========================================
+
+SELECT
+  event_name,
+  item.item_id,
+  item.item_name,
+  item.item_brand,
+  item.item_category,
+  item.price,
+  item.quantity
+FROM
+  `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`,
+  UNNEST(items) AS item
+LIMIT 20;
+
