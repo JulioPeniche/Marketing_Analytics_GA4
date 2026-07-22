@@ -38,3 +38,24 @@ SELECT
   COUNT(DISTINCT user_pseudo_id) AS usuarios
 FROM
   `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`;
+
+
+
+-- ==========================================
+-- Estrutura geral dos eventos
+-- ==========================================
+
+SELECT
+  event_date,
+  event_timestamp,
+  event_name,
+  user_pseudo_id,
+  platform,
+  device.category,
+  device.operating_system,
+  geo.country,
+  traffic_source.source,
+  traffic_source.medium
+FROM
+  `bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`
+LIMIT 10;
