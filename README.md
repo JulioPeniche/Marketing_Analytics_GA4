@@ -15,7 +15,7 @@ O projeto demonstra competências em SQL, modelagem de dados, Google Analytics 4
 
 ---
 
-# 🛠 Stack Tecnológica
+#  Stack Tecnológica
 
 | Ferramenta | Utilização |
 |------------|------------|
@@ -49,7 +49,7 @@ Período analisado:
 
 ---
 
-# 🏗 Arquitetura da Solução
+#  Arquitetura da Solução
 
 ```text
 Google Merchandise Store (GA4)
@@ -115,10 +115,12 @@ marketing_analytics_ga4/
 # 📈 Dashboard
 
 Global
+
 ![Dashboard](images/dashboard_1.png)
 
 ______________________________________
 Brasil
+
 ![Dashboard](images/dashboard_2.png)
 ```
 
