@@ -116,12 +116,12 @@ marketing_analytics_ga4/
 
 Global
 
-![Dashboard](images/dashboard_1.png)
+![Dashboard](images/Dashboard_1.png)
 
 ______________________________________
 Brasil
 
-![Dashboard](images/dashboard_2.png)
+![Dashboard](images/Dashboard_2.png)
 ```
 
 ---
