@@ -126,7 +126,7 @@ Brasil
 
 ---
 
-# 📊 Principais KPIs
+# 📊 Principais KPIs #
 
 O dashboard apresenta os seguintes indicadores:
 
